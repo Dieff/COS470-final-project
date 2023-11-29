@@ -1,3 +1,5 @@
 .direnv
 *.gb
 *.sav
+
+**/__pycache__

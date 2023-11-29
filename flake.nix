@@ -28,6 +28,9 @@
                 pip 
                 # for IDE
                 autopep8 flake8
+
+                # for taking screenshots
+                jeepney
                 ]
             );
         };
