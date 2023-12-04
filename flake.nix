@@ -19,6 +19,8 @@
               python311 virtualenv 
               # our emulator of choice
               mgba 
+              # take screenshots
+              grim
               # final report written in typst
               typst typst-live typst-lsp typst-fmt 
             ] ++
@@ -31,6 +33,11 @@
 
                 # for taking screenshots
                 jeepney
+                pillow
+
+                # for data
+                numpy
+                scipy
                 ]
             );
         };
