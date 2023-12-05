@@ -10,24 +10,53 @@
 
 === Previous Work
 
+Algorithmic
+
+Neural Networks
+
+Finally, an interesting piece of previous work is found within the code of
+Pokemon Red itself.
+
 == Design
 
 === Input Layer
 
+The role of the input layer is to capture the current visual output of the game
+emulator and translate it into pieces which can be used by the image recognition
+layer.
+
 === Image Recognition Layer
 
+=== Decision Tree Layer
+
 === Minimax Layer
+
+What is it
+
+This algorithm layer is not strictly necessary. It would be possible to make a
+capable game playing algorithm with only a decision tree. This is actually the
+approach taken by certain enemie AI algorithms (for trainers) within Pokemon
+Red. However, a decision tree would lead to limitations where the algorithm will
+not be able to find the same optimal move that a player could. This is because
+the decidion tree is inherently limited in the number of moves ahead that can be
+considered.
+
+Heuristic Function
+
+Example Tree
 
 === Output Layer
 
 == Implementation
 
+=== Unit Testing
 
 === Further Interface Improvements
 
-
 === Lessons in Autonomous Agent Design
-
 
 == Conclusion
 
+== References
+
+-

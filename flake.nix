@@ -31,6 +31,9 @@
                 # for IDE
                 autopep8 flake8
 
+                # for running tests
+                nose
+
                 # for taking screenshots
                 jeepney
                 pillow
