@@ -1,0 +1,33 @@
+#show link: underline
+
+= A Multi-algorithm Game Playing Agent
+
+== Summary
+
+== Background
+
+=== Scenario
+
+=== Previous Work
+
+== Design
+
+=== Input Layer
+
+=== Image Recognition Layer
+
+=== Minimax Layer
+
+=== Output Layer
+
+== Implementation
+
+
+=== Further Interface Improvements
+
+
+=== Lessons in Autonomous Agent Design
+
+
+== Conclusion
+
