@@ -1,35 +1,105 @@
 #show link: underline
+#set document(title: "A Multi-Algorithm Game Playing Agent", author: "Nick Dieffenbacher-Krall")
+#set page(numbering: "1")
+#set heading(numbering: "1.a.")
 
-= A Multi-algorithm Game Playing Agent
+= A Multi-algorithm Visual Game Playing Agent
 
-== Summary
+Nick Dieffenbacher-Krall
 
-== Background
+This report describes the design and implementation of a model-based agent 
+for playing a role-playing video game. The agent is given realistic constraints:
+the agent percepts are an image of the game screen, and its actuators are the
+same (virtual) controls a player would use. The purpose of this project is to
+experiment with the ways in which multiple AI techniques and algorithms can be
+combined to produce complex behavior in a single agent, and to compare this work
+with other approaches such as neural networks. The source code for the agent
+can be found along with this document.
 
-=== Scenario
+#outline(indent: auto)
 
-=== Previous Work
+#pagebreak()
+
+= Introduction
+
+= Background
+
+== Previous Work
 
 Algorithmic
 
 Neural Networks
 
-Finally, an interesting piece of previous work is found within the code of
-Pokemon Red itself.
+Finally, an interesting example of previous work is found within the code of
+Pokemon Red itself. In the game, a player encounters two types of enemies:
+wild Pokemon and Trainers. A wild pokemon is a new Pokemon that the
+player can catch, though they may also wish to fight to wild Pokemon
+in order to gain experience for their own Pokemon. A trainer's Pokemon can
+only be fought for experience, or to progress the game. These different types
+use their own algorithms to determine which move to use against a player.
+Wild Pokemon simply choose a random move. However, trainer Pokemon use a 
 
-== Design
+= Program Design
 
-=== Input Layer
+The agent has been implemented using Python 3.11, running on Linux, and using
+a Wayland (wlroots)-based Desktop environmet. The mgba
+#cite("mgba")
+emulator was chosen to run the actual Pokemon game, using a legally obtained
+ROM image. This emulator was chosen because it is open source, supports many
+operating systems, and emphasized low performance requirements. It would not be
+difficult to port the agent program to other desktop environments or operating
+systems.
+
+The agent is implemented using a number of open source Python libraries:
+#block(
+  inset: 8pt,
+table(
+  columns: (1fr, 1fr, 1fr),
+  inset: 8pt,
+  [*Dependency*], [*Purpose*], [*Link*],
+  [`flake8`], [Linting Python code], [#link("https://flake8.pycqa.org/en/latest/")[pycqa.org]],
+  [`pillow`], [Image Processing], [#link("https://pypi.org/project/Pillow/")[pypi.org]],
+  [`numpy`], [The standard Python library for data frames], [#link("https://numpy.org/")[numpy.org]]
+))
+
+== Input Layer
 
 The role of the input layer is to capture the current visual output of the game
-emulator and translate it into pieces which can be used by the image recognition
-layer.
+emulator, and translate it into pieces which can be used by the image recognition
+layer. This layer acts as the percept for the overall game agent.
 
-=== Image Recognition Layer
+The agent currently supports running on the Wayland desktop environment. Because
+Linux Desktop APIs were not a focus of this project, a very simplistic mechanism is used
+to load screen captures. The `grim` #cite("grim") tool is used to save a screen capture
+of an entire monitor, which is saved to a temporary file. The tool is invoked
+using the `subprocess` module in Python. The capture file is then read using
+`Pillow`, and deleted. This is a potentially slow process for gathering an agent
+percept. In a game-playing agent which required more real time action, such as one
+that played a 1st person action game, a different input layer architecture would
+likely be required. One approach would be to read the screen capture directly into
+the agent program, with no temporary file or external executable. On Wayland/Linux this
+could be accomplished using the `wlr-screencopy` Wayland protocol #cite("wlr-scopy").
 
-=== Decision Tree Layer
+Before it can be processed by the image recognition layer, the game screen capture
+must be normalized. A Gameboy Color has a screen resolution of 160 x 144 pixels #cite("gameboy-specs").
+This means that the screen has a 10:9 aspect ratio, rather than the 4:3 or 16:9 ratios
+more commonly used today. For this reason, the first processing step is to trim the borders
+off of the image to create a sub-image containing only game pixels. Next, the input resolution
+is reduced to more closely match the original game's resolution. It has a higher resolution
+to start because of the way in which mGBA renders grpahics. The Lanczos algorithm is used
+to scale the image, as supported in the Pillow library. This scaing algorithm has potentially higher
+performance costs, but also yields an image that is higher quality, compared to simpled image
+resolution scaling algorithms such as Bilinear Samplie.
 
-=== Minimax Layer
+== Image Recognition Layer
+
+The Image Recognition Layer uses a series of machine learning models and pre-written algorithms
+to translate the unstructured agent percept image into a structured representation of the
+current game state, as shown on the screen.
+
+== Rule-based Layer
+
+== Minimax Layer
 
 What is it
 
@@ -45,18 +115,18 @@ Heuristic Function
 
 Example Tree
 
-=== Output Layer
+== Output Layer
 
-== Implementation
+= Implementation
 
-=== Unit Testing
+== Unit Testing
 
-=== Further Interface Improvements
+== Further Interface Improvements
 
-=== Lessons in Autonomous Agent Design
+= Conclusion
 
-== Conclusion
+== Lessons in Autonomous Agent Design
 
-== References
 
--
+#bibliography("bibliography.yml")
+

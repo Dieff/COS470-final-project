@@ -1,0 +1,38 @@
+grim:
+  type: Web
+  title: "Grim"
+  author: ["Ser, Simon"]
+  date: 2023-07-04
+  url: 
+    value: https://git.sr.ht/~emersion/grim
+    date: 2023-12-05
+mgba:
+  type: Web
+  title: "mGBA"
+  date: 2024-04-12
+  url:
+    value: https://mgba.io/
+    date: 2023-12-05
+wlr-scopy:
+  type: Web
+  title: wlr-screencopy-unstable-v1.xml
+  author: ["Ser, Simon"]
+  date: 2020-06-08
+  url:
+    value: https://github.com/swaywm/wlr-protocols/blob/master/unstable/wlr-screencopy-unstable-v1.xml
+    date: 2023-12-05
+gameboy-specs:
+  type: Web
+  title: Game Boy Color Technical Data
+  author: "Nintendo"
+  url:
+    value: https://www.nintendo.co.uk/Support/Game-Boy-Pocket-Color/Product-information/Technical-data/Technical-data-619585.html
+    date: 2023-12-05
+pokemon-status-effects:
+  type: Web
+  title: "Pokemon Red Version — Guide and Walkthrough Compendium"
+  author: "Zerokid"
+  date: 2023-03-21
+  url:
+    value: https://gamefaqs.gamespot.com/gameboy/367023-pokemon-red-version/faqs/64175/status-conditions 
+    date: 2023-12-06

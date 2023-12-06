@@ -1,11 +1,11 @@
 import unittest
 
-from decision_layer import DecisionLayer
+from rule_layer import RuleLayer
 from vision_layer import VisionLayerOutput
 
 class TestDecisionLayer(unittest.TestCase):
   def test_basic_validation(self):
-    dlayer = DecisionLayer()
+    rlayer = RuleLayer()
 
     test = VisionLayerOutput()
-    self.assertTrue(dlayer.validate_input(test))
+    self.assertTrue(rlayer.validate_input(test))
