@@ -1,5 +1,7 @@
+# see https://github.com/typst/hayagriva/blob/main/docs/file-format.md
+---
 grim:
-  type: Web
+  type: Repository
   title: "Grim"
   author: ["Ser, Simon"]
   date: 2023-07-04
@@ -36,3 +38,17 @@ pokemon-status-effects:
   url:
     value: https://gamefaqs.gamespot.com/gameboy/367023-pokemon-red-version/faqs/64175/status-conditions 
     date: 2023-12-06
+ign-review:
+  type: Article
+  title: "Pokemon Red Review"
+  author: "Harris, Craig"
+  url:
+    value: "https://www.ign.com/articles/1999/06/24/pokemon-red"
+    date: 2023-12-07
+textbook:
+  type: Book
+  title: "Artificial Intelligence: A Modern Approach"
+  edition: "4th"
+  author: ["Russel, S", "Norvig, P"]
+  publisher: "Pearson Education, Inc."
+  date: "2021"
