@@ -116,21 +116,40 @@ resolution scaling algorithms such as Bilinear Samplie.
 
 == Image Recognition Layer
 
-The Image Recognition Layer uses a series of machine learning models and
+The Image Recognition (IR) Layer uses a series of machine learning models and
 pre-written algorithms to translate the unstructured agent percept image into a
 structured representation of the current game state, as shown on the screen.
 The input to this layer is a normalized screen capture of the last game output,
 as produced by the Input Layer. The output of this layer is a Python `dataclass`
 containing information about the current state of the game.
 
-== Rule-based Layer
+=== Model Training
 
-The rules used by this layer fall can be categorized into four groups based
+== Reflex Layer
+
+The purpose of the Reflex Layer is to simplify the implementation of the other layers
+by making a decision about how to proceed based on the game state. The game state
+representation is
+based on the output of the IR layer and some pre-programmed knowledge about the rules
+of the game. The rules used by this layer fall can be categorized into five groups based
 on the action that will be taken.
 1. Invalid state is detected.
 2. The agent is in the middle of an ongoing action.
 3. A battle is ocurring and a decision can be reached trivially.
 4. A battle has ended.
+5. The minimax layer is needed to determine a next move.
+
+
+
+In most cases, the minimax layer will not be invoked. Instead, the Reflex layer will
+call the Output Layer with a list game inputs. The inputs will be based on the current game state.
+
+#block(inset: 8pt, table(
+  columns: (1fr, 1fr, 1fr),
+  [*Action*], [*Game Inputs*], [*Explanation*],
+  [End battle], [press A 5x], [Once one Pokemon has fainted or been caught],
+  [Start battle], [press A once, wait], [To start the battle]
+))
 
 == Minimax Layer
 
@@ -152,9 +171,11 @@ Example Tree
 
 = Implementation
 
-== Unit Testing
+== General Development
 
-== Further Interface Improvements
+== Data Collection and Model Training
+
+== Further Improvements
 
 = Conclusion
 

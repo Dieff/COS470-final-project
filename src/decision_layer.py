@@ -38,3 +38,6 @@ class DecisionLayer(Layer):
       return True
     return False
   
+  def run_layer(self):
+    pass
+  

@@ -3,3 +3,6 @@
 *.sav
 
 **/__pycache__
+
+# training date stored here
+data/*
