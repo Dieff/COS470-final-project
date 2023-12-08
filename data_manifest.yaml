@@ -1,0 +1,297 @@
+# menu options
+# start
+# end
+# player_action
+# player_item
+# player_attack
+# animation
+
+images:
+- menu: 'animation'
+  name: 00b1f0fb.png
+  text: 'LEECH SEED saps Enemey CATERPIE!'
+- menu: 'start'
+  name: 0867cee3.png
+  text: 'BUG C'
+- menu: 'animation'
+  name: 08fde79f.png
+  text: 'LEECH SEED saps Enemy CATERPIE!'
+- menu: 'animation'
+  name: 09fe186e.png
+  text: 'BULBASAUR used TACKLE!'
+- menu: 'animation'
+  name: 0b84fc5e.png
+  text: 'Ene'
+- menu: 'animation'
+  name: 0daedfc1.png
+  text: "BULBASAUR's SPEED fell!"
+- menu: 'start'
+  name: 116a1ff5.png
+  text: 'Do it!'
+- menu: 'player_action'
+  name: 13e1ae9f.png
+  text: ''
+- menu: 'animation'
+  name: 16d1f598.png
+  text: 'BULBASAUR used LEECH SEED!'
+- menu: 'end'
+  name: 1c03693f.png
+  text: 'Enemy CATERPIE fainted!'
+- menu: 'player_item'
+  name: 1e1aef74.png
+  text: ''
+- menu: 'animation'
+  name: 1f3c7db6.png
+  text: 'Enemy CATERPIE used TACKLE!'
+- menu: 'animation'
+  name: 2165ecd3.png
+  text: 'BULBASAUR used TACKLE!'
+- menu: 'player_action'
+  name: 21c95ba3.png
+  text: ''
+- menu: 'player_item'
+  name: 27bc5ab5.png
+  text: ''
+- menu: 'start'
+  name: 294249ef.png
+  text: 'Do it! BULBASAUR!'
+- menu: 'player_action'
+  name: 2aae364a.png
+  text: ''
+- menu: 'player_item'
+  name: 3116bdaa.png
+  text: ''
+- menu: ''
+  name: 314ed0c1.png
+  text: ''
+- menu: 'animation'
+  name: 31bffea4.png
+  text: "BULBASAUR's SPEED fell!"
+- menu: 'start'
+  name: 34331af6.png
+  text: 'Go! BULBASAUR!'
+- menu: 'start'
+  name: 351dc95e.png
+  text: 'BUG CATCHER wants to fight!'
+- menu: 'animation'
+  name: 373aba2a.png
+  text: 'BULBASAUR used TACKLE!'
+- menu: 'animation'
+  name: 383d6957.png
+  text: 'BULBASAUR used LEECH SEED!'
+- menu: 'player_action'
+  name: 458ff9fd.png
+  text: ''
+- menu: 'animation'
+  name: 48f0130c.png
+  text: 'Enemy KAKUNA used HARDED!'
+- menu: 'animation'
+  name: 4f05e5a0.png
+  text: "Enemy KAKUNA's DEFENSE rose!"
+- menu: 'start'
+  name: 52aaffd1.png
+  text: 'Go! PIDGEY!'
+- menu: 'end'
+  name: 5419324c.png
+  text: 'RED defeated BUG CATCHER!'
+- menu: 'start'
+  name: 57164e1c.png
+  text: 'Wild KAKUNA appeared!'
+- menu: 'animation'
+  name: 58d5c81a.png
+  text: 'BULBASAUR used TACKLE!'
+- menu: 'end'
+  name: 5a6d956e.png
+  text: 'RED got $60 for winning!'
+- menu: 'animation'
+  name: 5d552743.png
+  text: 'PIDGEY enough! Come back!'
+- menu: 'end'
+  name: 5de9971a.png
+  text: 'PIDGEY gained 16 EXP. Points!'
+- menu: 'player_action'
+  name: 65d46fe1.png
+  text: ''
+- menu: 'animation'
+  name: 6ad6ac87.png
+  text: 'Go! BULBASAUR!'
+- menu: 'animation'
+  name: 6bb6d42e.png
+  text: 'Enemy CATERPIE used TACKLE!'
+- menu: 'animation'
+  name: 6c8b9ed2.png
+  text: ''
+- menu: 'animation'
+  name: 6d0a3782.png
+  text: "It's not very effective..."
+- menu: 'animation'
+  name: 6f841d33.png
+  text: 'LEECH SEED saps Enemy WEEDLE!'
+- text: "Enemy KAKUNA's DEFENSE rose!"
+  name: 7085b56c.png
+  manu: 'animation'
+- menu: 'animation'
+  name: 70e7b2cc.png
+  text: 'Enemy CATERPIE used TACKLE!'
+- menu: 'animation'
+  name: 76d37f61.png
+  text: 'Enemy WEEDLE used STRING SHOT!'
+- menu: 'player_action'
+  name: 77e299c9.png
+  text: ''
+- menu: 'end'
+  name: 7b352767.png
+  text: 'BULBASAUR grew to level 9!'
+- menu: 'start'
+  name: 833eb5dd.png
+  text: 'Go! BULBASAUR!'
+- menu: 'end'
+  name: 88d36f03.png
+  text: 'BULBASAUR gained 33 EXP. Points'
+- menu: 'player_attack'
+  name: 89beb6da.png
+  text: ''
+- menu: 'animation'
+  name: 8aaf9ac7.png
+  text: 'But, it'
+- menu: 'animation'
+  name: 8d6458b0.png
+  text: 'Enemy CATERPIE used TACKLE!'
+- menu: 'animation'
+  name: 958f01b2.png
+  text: 'Enemy WEEDLE used STRING SHOT!'
+- menu: 'end'
+  name: 97e1fe34.png
+  text: "CATERPIE can't cut it!"
+- menu: 'end'
+  name: 97e934c5.png
+  text: 'PIDGEY gew to level 4!'
+- menu: 'player_action'
+  name: 981efb50.png
+  text: ''
+- menu: 'end'
+  name: 9ab5bd68.png
+  text: 'BULBASAUR gained 67 EXP. Points!'
+- menu: 'start'
+  name: 9d25e7f7.png
+  text: 'BUG CATCHER sent out CATERPIE!'
+- menu: 'animation'
+  name: 9da5357c.png
+  text: 'PIDGEY enough! Come back!'
+- menu: 'player_attack'
+  name: 9f65ca51.png
+  text: ''
+- menu: 'animation'
+  name: a1f40a93.png
+  text: 'LEECH SEED saps Enemy CATERPIE!'
+- menu: 'animation'
+  name: a51ad41c.png
+  text: 'Critical hit!'
+- menu: 'start'
+  name: a6ad8b5a.png
+  text: ''
+- menu: 'end'
+  name: a708bbd4.png
+  text: 'Enemy RATTATA fainted!'
+- menu: 'player_action'
+  name: a7d017f3.png
+  text: ''
+- menu: 'animation'
+  name: ad598337.png
+  text: 'BULBASAUR used TACKLE!'
+- menu: 'animation'
+  name: ae27464d.png
+  text: 'LEECH SEED saps Enemy CATERPIE!'
+- menu: ''
+  name: b23a144a.png
+  text: ''
+- menu: 'animation'
+  name: b51c276b.png
+  text: 'Enemy CATERPIE used TACKLE!'
+- menu: 'animation'
+  name: b6ed1ed9.png
+  text: 'Enemy WEEDLE used STRING SHOT!'
+- menu: 'animation'
+  name: b7118f8a.png
+  text: 'Enemy WEEDLE used STRING SHOT!'
+- menu: 'player_action'
+  name: b8d63775.png
+  text: ''
+- menu: 'player_item'
+  name: ba5f4d1f.png
+  text: ''
+- menu: ''
+  name: bd0f2ee4.png
+  text: ''
+- menu: 'animation'
+  name: c09927b1.png
+  text: 'But, but failed!'
+- menu: 'animation'
+  name: c0b7df66.png
+  text: 'BULBASAUR used TACKLE!'
+- menu: 'player_attack'
+  name: c6a89215.png
+  text: ''
+- menu: 'animation'
+  name: c6bab59f.png
+  text: "BULBASAUR's SPEED fell!"
+- menu: 'animation'
+  name: c957018a.png
+  text: 'Ene'
+- menu: 'animation'
+  name: cd79559d.png
+  text: 'But, it failed!'
+- menu: 'start'
+  name: d0f952cb.png
+  text: 'BUG CATHCER is about to use'
+- menu: 'end'
+  name: d6a712d3.png
+  text: 'PIDGEY gained 33 EXP. Points!'
+- menu: 'end'
+  name: d712e4c0.png
+  text: 'Enemy WEEDLE fainted!'
+- menu: 'animation'
+  name: d7650a6b.png
+  text: 'BULBASAUR used TACKLE!'
+- menu: 'player_action'
+  name: da9e9a1d.png
+  text: ''
+- menu: 'start'
+  name: db0094e8.png
+  text: ''
+- menu: 'animation'
+  name: dce4529d.png
+  text: "It's not very effective..."
+- menu: 'animation'
+  name: dd6ffd89.png
+  text: 'Enemy WEEDLE used STRING SHOT!'
+- menu: 'start'
+  name: e22e7329.png
+  text: 'about to use CATERPIE!'
+- menu: 'animation'
+  name: e7de4320.png
+  text: 'Do it! BULBASAUR!'
+- menu: 'animation'
+  name: e971f831.png
+  text: 'Enemy WEEDLE was seeded!'
+- menu: 'animation'
+  name: e98bc51b.png
+  text: 'LEECH SEED saps Enemy WEEDLE!'
+- menu: 'animation'
+  name: eaff6eeb.png
+  text: 'BULBASAUR used TACKLE!'
+- menu: 'animation'
+  name: f230fa46.png
+  text: 'Enemy WEEDLE used POISON STING!'
+- menu: 'animation'
+  name: f53d337a.png
+  text: 'Enemy CATERPIE used TACKLE!'
+- menu: 'animation'
+  name: f853802c.png
+  text: "BULBASAUR's SPEED fell!"
+- menu: 'player_Action'
+  name: f88153d5.png
+  text: ''
+- menu: 'animation'
+  name: faf8a736.png
+  text: 'BULBASAUR used TACKLE!'

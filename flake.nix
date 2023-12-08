@@ -16,16 +16,16 @@
           packages = with pkgs; 
             [ 
               # using python 3.11
-              python311 virtualenv 
+              python310Full virtualenv 
               # our emulator of choice
               mgba 
               # take screenshots
               grim
               # final report written in typst
-              typst typst-live typst-lsp typst-fmt 
+              typst typst-live typst-lsp typst-fmt pandoc
             ] ++
             # python packages
-            (with pkgs.python311Packages; 
+            (with pkgs.python310Packages; 
               [ 
                 pip 
                 # for IDE
@@ -41,6 +41,15 @@
                 # for data
                 numpy
                 scipy
+                pandas
+                tensorflow
+                keras
+                matplotlib
+
+                # misc
+                pyyaml
+                pypandoc
+                jupyter
                 ]
             );
         };

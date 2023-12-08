@@ -19,7 +19,7 @@ class VisionLayerOutput:
     return f"State(max_health={self.max_health} min_health={self.min_health})"
 
 # where will data files be saved?
-OUTPUT_DIR = "data"
+OUTPUT_DIR = "data2"
 # as found by opening a screen capture data file in "Pinta"
 ENEMY_HEALTH_BAR_PIX_LOC = ((56, 34), (156, 34))
 PLAYER_HEALTH_BAR_PIX_LOC = ((197, 149), (300, 149))
@@ -54,7 +54,7 @@ def get_color_distance(color1, color2):
 
 class VisionLayer(Layer):
   last_input = None
-  save_input = False
+  save_input = True
 
   def validate_input(self, input: PIL.Image.Image):
     self.last_input = input

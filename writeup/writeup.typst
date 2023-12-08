@@ -55,7 +55,7 @@ random move. However, trainer Pokemon use a
 
 = Program Design
 
-The agent has been implemented using Python 3.11, running on Linux, and using a
+The agent has been implemented using Python 3.10, running on Linux, and using a
 Wayland (wlroots)-based Desktop environmet. The mgba
 #cite("mgba")
 emulator was chosen to run the actual Pokemon game, using a legally obtained ROM
